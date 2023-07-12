@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sale_of_drink/vista/personaVista.dart';
-import 'package:sale_of_drink/vista/ventaVista.dart';
 
 void main() => runApp(const App());
 

@@ -12,7 +12,7 @@ class PersonaService {
     print('Iniciando');
     print(Uri.parse(_baseUrls));
     final response = await client.get(
-      Uri.parse(_baseUrls),
+      Uri.parse("$_baseUrls"),
       headers: {'Access-Control-Allow-Origin': '*'},
     );
     print(convert.jsonDecode(response.body));

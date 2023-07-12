@@ -29,7 +29,7 @@ class _ListaPersonaState extends State<personaVista> {
         title: const Text(' LISTA DE CLIENTES REGISTRADOS'),
         actions: [
           ElevatedButton(
-            child: Text('Siguiente'),
+            child: const Text('Siguiente'),
             onPressed: () {
               // Navigate to the next screen
               Navigator.push(
@@ -51,7 +51,9 @@ class _ListaPersonaState extends State<personaVista> {
                 final personas = persona[index];
                 return ListTile(
                   title: Text(
-                      '${personas.idper} ${personas.nomper} ${personas.apeper} ${personas.celper} ${personas.corper}  ${personas.dniper} ${personas.estper}'),
+                      ' ${personas.idper} :  ${personas.nomper}  ${personas.apeper}'),
+                  subtitle: Text(
+                      "            ${personas.celper}  -  ${personas.corper}  -  ${personas.dniper}  -  ${personas.estper}"),
                   onTap: () {
                     // Handle tapping on the person item
                     _showPersonDialog(personas);

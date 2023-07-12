@@ -40,7 +40,7 @@ class _ListaVentaState extends State<ventaVista> {
                 final ventas = venta[index];
                 return ListTile(
                   title: Text(
-                      '${ventas.idven} ${ventas.fecven} ${ventas.tippagven} ${ventas.estven}'),
+                      '${ventas.idven}   :     ${ventas.fecven}      ${ventas.tippagven}        ${ventas.estven}'),
                   onTap: () {
                     // Handle tapping on the venta item
                     _showVentaDialog(ventas);
